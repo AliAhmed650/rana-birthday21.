@@ -122,6 +122,6 @@
   }
   $("surprise").onclick = () => {
     burst();
-    $("surpriseMsg").textContent = `كل سنة وانتي طيبة يا ${C.herName}… بحبك ${C.age} مرة وأكتر 💖`;
+    $("surpriseMsg").textContent = `كل سنة وانتي طيبة يا ${يقلب بابا}… بحبك ${C.age} مرة وأكتر 💖`;
   };
 })();

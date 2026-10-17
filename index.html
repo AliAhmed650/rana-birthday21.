@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>عيد ميلاد سعيد 🎂</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="hearts" aria-hidden="true"></div>
+  <button id="musicBtn" class="music" hidden aria-label="تشغيل الموسيقى">🎵</button>
+
+  <header class="hero">
+    <p class="eyebrow">عيد ميلاد سعيد</p>
+    <div class="age"><span id="age">21</span></div>
+    <h1 class="names"><span id="herName"></span> <span class="amp">&amp;</span> <span id="hisName"></span></h1>
+    <p class="sub">يوم مخصوص لأحلى واحدة في الدنيا 🤍</p>
+    <a href="#counter" class="scroll">⌄</a>
+  </header>
+
+  <section id="counter" class="section reveal">
+    <h2>مع بعض من…</h2>
+    <div class="counter" id="counterBox">
+      <div><b id="cDays">0</b><span>يوم</span></div>
+      <div><b id="cHours">0</b><span>ساعة</span></div>
+      <div><b id="cMins">0</b><span>دقيقة</span></div>
+      <div><b id="cSecs">0</b><span>ثانية</span></div>
+    </div>
+    <p class="muted">من يوم ما اتعرفنا <span id="metText"></span></p>
+  </section>
+
+  <section class="section reveal">
+    <h2>رحلتنا</h2>
+    <ol class="timeline" id="timeline"></ol>
+  </section>
+
+  <section class="section letter-sec">
+    <h2 id="letterTitle"></h2>
+    <div class="letter" id="letter"></div>
+    <p class="sign">— <span id="hisName2"></span></p>
+  </section>
+
+  <section class="section reveal">
+    <h2>لحظاتنا 📸</h2>
+    <div class="gallery" id="gallery"></div>
+  </section>
+
+  <section class="section reveal" id="videosSec">
+    <h2>فيديوهات حلوة 🎬</h2>
+    <div class="videos" id="videos"></div>
+  </section>
+
+  <section class="section reveal finale">
+    <h2>في مفاجأة صغيرة…</h2>
+    <button id="surprise" class="btn">اضغطي هنا 🎁</button>
+    <p id="surpriseMsg" class="surprise-msg"></p>
+  </section>
+
+  <footer>صُنع بكل حب 🤍</footer>
+
+  <div class="lightbox" id="lightbox" hidden><img alt=""><button aria-label="إغلاق">✕</button></div>
+  <canvas id="confetti"></canvas>
+
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

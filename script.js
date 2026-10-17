@@ -45,6 +45,9 @@
   } else {
     gal.innerHTML = '<div class="placeholder">📷</div>'.repeat(4);
   }
+  // قسم الصور طويل على الموبايل، فبنظهره على طول من غير ما نستنى السكرول
+  const galSec = gal.closest(".reveal");
+  if (galSec) galSec.classList.add("show");
   const lb = $("lightbox"), lbImg = lb.querySelector("img");
   gal.addEventListener("click", (e) => {
     const f = e.target.closest("figure"); if (!f) return;
@@ -80,7 +83,7 @@
   // ظهور تدريجي أثناء السكرول
   const io = new IntersectionObserver((es) => es.forEach(e => {
     if (e.isIntersecting) { e.target.classList.add("show"); io.unobserve(e.target); }
-  }), { threshold: 0.15 });
+  }), { threshold: 0, rootMargin: "0px 0px -8% 0px" });
   document.querySelectorAll(".reveal, .letter p").forEach(el => io.observe(el));
 
   // قلوب طايرة
@@ -122,6 +125,6 @@
   }
   $("surprise").onclick = () => {
     burst();
-    $("surpriseMsg").textContent = `كل سنة وانتي طيبة يا ${يقلب بابا}… بحبك ${C.age} مرة وأكتر 💖`;
+    $("surpriseMsg").textContent = `كل سنة وانتي طيبة يا ${C.herName}… بحبك ${C.age} مرة وأكتر 💖`;
   };
 })();

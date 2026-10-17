@@ -55,7 +55,7 @@ section,header,footer{position:relative;z-index:1}
 .letter p.show{opacity:1;transform:none}
 .sign{font-family:'Aref Ruqaa',serif;font-size:1.6rem;color:var(--rose);margin-top:1.2rem}
 
-.gallery{columns:2 200px;column-gap:.9rem}
+.gallery{columns:2 140px;column-gap:.7rem}
 .gallery figure{break-inside:avoid;margin-bottom:.9rem;border-radius:16px;overflow:hidden;background:var(--card);cursor:zoom-in;transition:transform .3s}
 .gallery figure:hover{transform:scale(1.03) rotate(-.6deg)}
 .gallery img{width:100%;display:block}
